@@ -12,7 +12,7 @@
 (define (g n) (A 1 n))
 ; (2^n) if n > 0
 (define (h n) (A 2 n))
-; (n^(n-1)) n=(2,4,16,...)
+; wtf is it
 
 (A 2 4)
 ; A(1 A(2 3))

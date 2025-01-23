@@ -4,17 +4,6 @@ Visit [Structure and Interpretation of Computer Programs](https://sarabander.git
 
 ## Tips of using Racket to learn SICP
 
-### Run Racket Scripts
-
-For example, create a file named `sicp-example.rkt`:
-
-```scheme
-#lang racket
-(displayln "Hello, SICP!")
-```
-
-Run the file using the command: `racket sicp-example.rkt`
-
 ### Use the SICP Language Package
 
 The SICP book uses the Scheme language. You can install the sicp package in Racket to ensure compatibility with SICP exercises. Install it with: `raco pkg install sicp`
@@ -22,3 +11,18 @@ The SICP book uses the Scheme language. You can install the sicp package in Rack
 ### REPL with SICP Language
 
 To use the sicp language in the REPL, start it with: `racket -I sicp`
+
+### Run SICP Scripts
+
+Create a file named `sicp-example.rkt`:
+
+```scheme
+#lang sicp
+(inc 232)
+```
+
+Run the file using the command: `racket sicp-example.rkt`, output as:
+
+```
+233
+```

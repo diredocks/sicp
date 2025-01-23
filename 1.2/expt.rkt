@@ -1,5 +1,7 @@
 #lang sicp
 
+(define (square x) (* x x))
+
 (define (expt-rec x n)
   (if (= n 0)
     1
@@ -17,5 +19,14 @@
   (iter x n 1)
 )
 
+(define (expt-fast x n)
+  (cond
+    ((= n 0) 1)
+    ((even? n) (square (expt-fast x (/ n 2))))
+    (else (* x (expt-fast x (- n 1))))
+  )
+)
+
 (expt-rec 4 2)
 (expt-iter 4 2)
+(expt-fast 4 2)

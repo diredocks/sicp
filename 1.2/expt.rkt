@@ -31,8 +31,8 @@
   (define (iter x n p)
     (cond
       ((= n 0) p)
-      ((even? n) (iter (square x) (/ n 2) p))
-      (else (iter x (- n 1) (* x p)))
+      ((even? n) (iter (square x) (/ n 2) p)) ; keep squaring x if even
+      (else (iter x (- n 1) (* x p))) ; isolate the odd element
     )
   )
   (iter x n 1)

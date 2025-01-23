@@ -1,3 +1,7 @@
+#lang sicp
+
+(define (square a) (* a a))
+
 (define (one-third x y) 
   (/ (+ x y) 3))
 

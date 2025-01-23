@@ -1,3 +1,5 @@
+#lang sicp
+
 (define (square a) (* a a))
 (define (sum-sqaure a b) (+ (square a) (square b)))
 (define (<= a b) (not (> a b)))

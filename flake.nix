@@ -17,7 +17,7 @@
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            mitscheme
+            racket
           ];
           shellHook = ''
             export SHELL=$(which zsh)
